@@ -1,0 +1,1 @@
+<?php require_once "../partials/auth.php";require_once "../config/database.php";$id=(int)($_GET['id']??0);$conn->query("DELETE FROM quotations WHERE id=$id");header("Location:index.php");exit;?>
